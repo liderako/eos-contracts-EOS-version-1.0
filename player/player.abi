@@ -1,0 +1,24 @@
+{
+    "types": [{
+        "newTypeName": "AccountName",
+        "type": "Name"
+      }
+    ],
+    "structs": [
+    {
+        "name": "message",
+        "fields":
+        {
+          "name": "String"
+          "count": "UInt64"
+        }
+      }
+    ],
+    "actions": [
+    {
+        "action": "hello",
+        "type": "message"
+      }
+    ],
+    "tables": []
+}
