@@ -4,21 +4,20 @@
         "type": "Name"
       }
     ],
-    "structs": [
-    {
+    "structs": [{
         "name": "message",
-        "fields":
-        {
+        "fields": {
           "name": "String"
           "count": "UInt64"
         }
       }
     ],
-    "actions": [
-    {
+    "actions": [{
         "action": "hello",
         "type": "message"
       }
     ],
-    "tables": []
+    "tables":
+    [
+    ]
 }
