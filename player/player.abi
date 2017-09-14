@@ -1,23 +1,25 @@
 {
-    "types": [{
-        "newTypeName": "AccountName",
-        "type": "Name"
+  "structs": [{
+  "name": "variable",
+    "fields": {
+      "name": "String"
+      "count": "UInt64"
+    }
+  },{
+      "name": "account",
+      "fields": {
+        "balance": "UInt64"
       }
-    ],
-    "structs": [{
-        "name": "message",
-        "fields": {
-          "name": "String"
-          "count": "UInt64"
-        }
-      }
-    ],
-    "actions": [{
-        "action": "hello",
-        "type": "message"
-      }
-    ],
-    "tables":
-    [
-    ]
+    }
+  ],
+  "actions": [{
+    "action": "hello", "type": "variable"
+    }
+  ],
+  "tables": [{
+      "table": "account",
+      "type": "account",
+      "indextype": "i64"
+    }
+  ]
 }

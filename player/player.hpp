@@ -11,19 +11,20 @@
 /* ************************************************************************** */
 
 #include <eoslib/eos.hpp>
+#include <eoslib/db.h>
 
-namespace player
-{
-   struct Message
-   {
-     char name = 0;
-     int  count = 0;
-   };
-}
+// namespace player
+// {
+//    struct Var
+//    {
+//      char name = 0;
+//      int  count = 0;
+//    };
+// }
 
-// struct PACKED(test) {
-// 	int key = 0;
-// };
+struct PACKED(table) {
+	uint64_t key;
+};
 
     // "tables": [
     //   {
