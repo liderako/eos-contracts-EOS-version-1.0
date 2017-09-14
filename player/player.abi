@@ -6,14 +6,18 @@
       "count": "UInt64"
     }
   },{
-      "name": "account",
-      "fields": {
+  "name": "account",
+    "fields": {
         "balance": "UInt64"
-      }
     }
+  },{
+  "name": "void"
+  }
   ],
   "actions": [{
     "action": "hello", "type": "variable"
+    },{
+    "action": "load", "type": "void"
     }
   ],
   "tables": [{
