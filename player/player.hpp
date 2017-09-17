@@ -1,41 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   author: asvirido                                   :+:      :+:    :+:   */
+/*   player.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*                                                  +#+  +:+       +#+        */
+/*   By: asvirido <asvirido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Title: I what to know                             #+#    #+#             */
-/*                                                    ###   ########.fr       */
+/*   Created: 2017/09/17 15:41:12 by asvirido          #+#    #+#             */
+/*   Updated: 2017/09/17 17:16:15 by asvirido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <eoslib/eos.hpp>
 #include <eoslib/db.h>
 
-// namespace player
-// {
-//    struct Var
-//    {
-//      char name = 0;
-//      int  count = 0;
-//    };
-// }
+#include <eoslib/eos.hpp>
+#include <eoslib/token.hpp>
+#include <eoslib/db.hpp>
 
-struct PACKED(table) {
-	uint64_t key;
-};
+namespace player {
 
-    // "tables": [
-    //   {
-    //     "table": "test",
-    //     "type": "test",
-    //   }
-    // ]
+   struct Account {
 
-    // ,{
-    //   "name": "test",
-    //   "fields":{
-    //     "key": "UInt64"
-    //   }
-    //   }
+        AccountName       name;
+        uint64_t          win;
+
+        Account() {
+            name = currentCode();
+            win = 0;
+        }
+   };
+
+   using Accounts = Table<N(currentCode()),N(player),N(account),Account,uint64_t>;
+
+   inline Account getAccount( AccountName owner ) {
+      Account   account;
+
+      Accounts::get( account, owner );
+      return ( account );
+   }
+}

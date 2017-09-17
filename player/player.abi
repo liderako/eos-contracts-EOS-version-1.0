@@ -1,4 +1,9 @@
 {
+  "types": [{
+      "newTypeName": "AccountName",
+      "type": "Name"
+    }
+  ],
   "structs": [{
   "name": "variable",
     "fields": {
@@ -8,7 +13,8 @@
   },{
   "name": "account",
     "fields": {
-        "balance": "UInt64"
+        "name": "AccountName"
+        "win": "UInt64"
     }
   },{
   "name": "void"
@@ -23,7 +29,7 @@
   "tables": [{
       "table": "account",
       "type": "account",
-      "indextype": "i64"
+      "indextype": "i64",
     }
   ]
 }
