@@ -6,7 +6,7 @@
 /*   By: asvirido <asvirido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/17 15:41:12 by asvirido          #+#    #+#             */
-/*   Updated: 2017/09/17 17:16:20 by asvirido         ###   ########.fr       */
+/*   Updated: 2017/09/17 17:24:50 by asvirido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,9 @@ namespace player  {
 
 extern "C" {
     void init() {
-      player::Remove( N(player), player::Account() );
-      player::Store( N(player), player::Account() );
+      AccountName name = currentCode();
+      player::Remove( name, player::Account() );
+      player::Store( name, player::Account() );
     }
 
     void apply(uint64_t code, uint64_t action)  {;
