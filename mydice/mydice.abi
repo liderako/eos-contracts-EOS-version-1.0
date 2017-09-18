@@ -1,0 +1,23 @@
+{
+  "types": [{
+      "newTypeName": "AccountName",
+      "type": "Name"
+    }
+  ],
+  "structs": [{
+  "name": "players",
+    "fields": {
+        "one": "AccountName"
+        "two": "AccountName"
+    }
+  },{
+  "name": "void"
+  }
+  ],
+  "actions": [{
+    "action": "game", "type": "players"
+    },{
+    "action": "load", "type": "void"
+    }
+  ]
+}
