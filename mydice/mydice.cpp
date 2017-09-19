@@ -30,8 +30,6 @@ namespace mydice {
        eos::print("ONE");
        eos::print(one.win);
        eos::print("\n");
-       /// token subtraction has underflow assertion
-      // //to.balance   += transfer.quantity; /// token addition has overflow assertion
       //Accounts::remove(one, game.one);
       Accounts::store( one, game.one );
       Accounts::store( two, game.two );
