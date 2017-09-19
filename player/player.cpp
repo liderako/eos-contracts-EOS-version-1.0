@@ -31,7 +31,7 @@ extern "C" {
       player::Store( name, player::Account() );
     }
 
-    void apply(uint64_t code, uint64_t action)  {;
+    void apply(uint64_t code, uint64_t action)  {
     }
 }
 
