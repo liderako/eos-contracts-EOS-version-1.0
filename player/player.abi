@@ -23,7 +23,9 @@
   "actions": [{
     "action": "hello", "type": "variable"
     },{
-    "action": "load", "type": "void"
+    "action": "win", "type": "void"
+    },{
+    "action": "remove", "type": "void"
     }
   ],
   "tables": [{
