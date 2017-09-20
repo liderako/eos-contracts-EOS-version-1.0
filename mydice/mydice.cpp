@@ -6,7 +6,7 @@
 /*   By: asvirido <asvirido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/17 15:41:12 by asvirido          #+#    #+#             */
-/*   Updated: 2017/09/18 15:23:07 by asvirido         ###   ########.fr       */
+/*   Updated: 2017/09/20 18:15:41 by asvirido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ namespace mydice {
   void  Gameplay(const mydice::Game& game) { 
    //   requireNotice( game.one);
    //   requireNotice( game.two );// Add the specified account to set of accounts to be notified
-  //  requireAuth( game.one ); //Verifies that name exists in the set of provided auths on a message. Throws if not found
+  //  requireAuth( game.one ); 
   //  requireAuth( game.two ); // Verifies that name exists in the set of provided auths on a message. Throws if not found
 
       auto two = getAccount( game.two );
