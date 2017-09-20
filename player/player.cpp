@@ -24,7 +24,7 @@ namespace player  {
      Accounts::remove ( account, account.name ); 
     }
     void Win ( AccountName name ) {
-      auto var = Accounts::getAccount( name );
+      auto var = getAccount( name );
       
       var.win += 1;
       player::Store( var );
