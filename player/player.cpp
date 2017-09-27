@@ -20,7 +20,7 @@ namespace player  {
       Accounts::store( account.name, N(account), &account, sizeof(account) );
     }
 
-    void Win ( AccountName name ) {
+    void Win( AccountName name ) {
       requireNotice( name );
       requireAuth( name );
       
