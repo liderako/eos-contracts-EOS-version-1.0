@@ -6,41 +6,27 @@
 /*   By: asvirido <asvirido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/17 15:41:12 by asvirido          #+#    #+#             */
-/*   Updated: 2017/09/20 18:15:41 by asvirido         ###   ########.fr       */
+/*   Updated: 2017/09/28 16:38:27 by asvirido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <mydice/mydice.hpp>
 
 using namespace eos;
-using namespace player;
 
 namespace mydice {
-  void  Gameplay(const mydice::Game& game) { 
-   //   requireNotice( game.one);
-   //   requireNotice( game.two );// Add the specified account to set of accounts to be notified
-  //  requireAuth( game.one ); 
-  //  requireAuth( game.two ); // Verifies that name exists in the set of provided auths on a message. Throws if not found
 
-      auto two = getAccount( game.two );
-      auto one   = getAccount( game.one );
+  // int  getWiner() {
+  //   Time  random;
+  //   int   result;
 
-       one.win = 1;
-       two.win = 1;
-       eos::print("ONE");
-       eos::print(one.win);
-       eos::print("\n");
-      //Accounts::remove(one, game.one);
-      Accounts::store( one, game.one );
-      Accounts::store( two, game.two );
+  //   random = now();
+  //   result = random % 2;
+  //   return (result);
+  // }
 
-      auto one1  = getAccount( game.one );
-      eos::print("LALA ");
-      eos::print(one1.win);
-      eos::print("\n");
-      //eos::print("error\n");
-      //player::Store( game.one, one );
-      //player::Store( game.two, two );
+  void  Gameplay(const mydice::Game& game) {
+    player::Win(game.one);
   }
 }
 
@@ -55,4 +41,7 @@ extern "C" {
         }
     }
 }
+
+
+
 
