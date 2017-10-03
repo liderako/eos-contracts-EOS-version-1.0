@@ -7,8 +7,7 @@
   "structs": [ {
   "name": "input",
     "fields": {
-      "name": "String"
-      "num": "UInt64"
+      "text": "AccountName"
     }
   }
   ],
@@ -17,3 +16,4 @@
     }
   ]
 }
+
