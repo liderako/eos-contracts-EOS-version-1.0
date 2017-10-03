@@ -1,0 +1,19 @@
+{
+  "types": [{
+      "newTypeName": "AccountName",
+      "type": "Name"
+    }
+  ],
+  "structs": [ {
+  "name": "input",
+    "fields": {
+      "name": "String"
+      "num": "UInt64"
+    }
+  }
+  ],
+  "actions": [{
+    "action": "output", "type": "input"
+    }
+  ]
+}
