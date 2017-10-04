@@ -2,18 +2,22 @@
   "types": [{
       "newTypeName": "AccountName",
       "type": "Name"
+    },{
+      "newTypeName": "int",
+      "type": "UInt64"
     }
   ],
   "structs": [ {
   "name": "input",
     "fields": {
-      "text": "AccountName"
+      "text": "int"
     }
   }
   ],
   "actions": [{
     "action": "output", "type": "input"
+    },{
+    "action": "dynamic", "type": "String"
     }
   ]
 }
-
