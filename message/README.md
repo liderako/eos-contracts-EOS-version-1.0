@@ -36,6 +36,7 @@ cd ~/eos/build/programs/eosc && ./eosc set contract NAME_ACCOUNT ~/eoc/contracts
 + Action dynamic
 ```
   ./eosc push message NAME_ACCOUNT dynamic "0hello" -S NAME_ACCOUNT`
+  P.S I don't understand, but action dynamic doesn't work if first character in the string is a character, not a number.
 ```
 P.S
 Output in eosd win!
