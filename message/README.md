@@ -28,7 +28,14 @@ cd ~/eos/build && cmake -DBINARYEN_BIN=~/binaryen/bin -DOPENSSL_ROOT_DIR=/usr/lo
 cd ~/eos/build/programs/eosc && ./eosc set contract NAME_ACCOUNT ~/eoc/contracts/message/message.wast ~/eos/contract/message/message.abi
 `
 ### How to start?
-`/eosc push message NAME_ACCOUNT output '{"text":"Hello World"}' -S NAME_ACCOUNT`
++ Action output
 
+```
+  ./eosc push message NAME_ACCOUNT output '{"text":"Hello World"}' -S NAME_ACCOUNT
+```
++ Action dynamic
+```
+  ./eosc push message NAME_ACCOUNT dynamic "0hello" -S NAME_ACCOUNT`
+```
 P.S
 Output in eosd win!
