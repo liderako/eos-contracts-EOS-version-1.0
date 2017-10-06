@@ -37,6 +37,7 @@ extern "C" {
     void apply(uint64_t code, uint64_t action)  {
       if ( code == N( mydice ) )
         if ( action == N( game ) ) {
+          requireAuth( N(mydice) );
           mydice::Gameplay( currentMessage< mydice::Game >() );
         }
     }
