@@ -64,8 +64,8 @@ namespace player {
   }
 
   void    Win( AccountName name ) {
-    requireNotice( name );
-    requireAuth( name );
+    //requireNotice( name );
+    //requireAuth( name );
       
     auto var = getAccount( name );
       
