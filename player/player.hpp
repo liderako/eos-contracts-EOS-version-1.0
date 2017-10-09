@@ -6,7 +6,7 @@
 /*   By: asvirido <asvirido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/17 15:41:12 by asvirido          #+#    #+#             */
-/*   Updated: 2017/09/28 17:21:47 by asvirido         ###   ########.fr       */
+/*   Updated: 2017/10/09 13:04:25 by asvirido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,8 @@ namespace player {
   inline    Account getAccount( AccountName owner ) {
     Account   account;
 
-    Accounts::get(owner, owner, N( account ), &account, sizeof(account) );
+    account.name = owner;
+    Accounts::get(owner, currentCode(), N( account ), &account, sizeof(account) );
     return ( account );
   }
 
