@@ -12,12 +12,25 @@
     }
   },{
   "name": "void"
+  },
+  {
+  "name": "account",
+    "fields": {
+        "name": "AccountName"
+        "win": "UInt64"
+    }
   }
   ],
   "actions": [{
     "action": "game", "type": "players"
     },{
     "action": "load", "type": "void"
+    }
+  ]
+  "tables": [{
+      "table": "account",
+      "type": "account",
+      "indextype": "i64"
     }
   ]
 }
