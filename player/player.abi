@@ -31,7 +31,8 @@
   "tables": [{
       "table": "account",
       "type": "account",
-      "indextype": "i64"
+      "indextype": "i64",
     }
   ]
 }
+
