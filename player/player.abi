@@ -21,7 +21,7 @@
   }
   ],
   "actions": [{
-    "action": "hello", "type": "variable"
+    "action": "hello", "type": "void"
     },{
     "action": "win", "type": "void"
     },{
