@@ -6,7 +6,7 @@
 /*   By: asvirido <asvirido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/17 15:41:12 by asvirido          #+#    #+#             */
-/*   Updated: 2017/09/28 16:38:01 by asvirido         ###   ########.fr       */
+/*   Updated: 2017/10/22 21:22:29 by asvirido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,3 @@ using namespace player;
     AccountName   two;
   };
 }
-
