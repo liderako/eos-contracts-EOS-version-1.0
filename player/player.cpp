@@ -6,7 +6,7 @@
 /*   By: asvirido <asvirido@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/17 15:41:12 by asvirido          #+#    #+#             */
-/*   Updated: 2017/10/22 23:07:46 by asvirido         ###   ########.fr       */
+/*   Updated: 2017/11/07 14:13:28 by asvirido         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,24 +16,26 @@ using namespace eos;
 
 namespace player{
 
-	void	sendMoney( AccountName name, int countMoney) {
-		Account var = getAccount( name );
+	void	sendMoney( AccountName name, int quantity) {
+		Account 	account;
 
-		var.money -= countMoney;
-		player::Store( var );
+		account = getAccount( name );
+		account.moneySub(quantity);
+		player::Store( account );
 	}
 
-	void	getMoney( AccountName name, int countMoney) {
-		Account var = getAccount( name );
+	void	getMoney( AccountName name, int quantity) {
+		Account 	account;
 
-		var.money += countMoney;
-		player::Store( var );
+		account = getAccount( name );
+		account.moneyAdd(quantity);
+		player::Store( account );
 	}
 }
 
 extern "C" {
 	void init() {
-		player::Store( player::Account() );
+		player::Store( Account() );
 	}
 
 	void apply( uint64_t code, uint64_t action )  {
