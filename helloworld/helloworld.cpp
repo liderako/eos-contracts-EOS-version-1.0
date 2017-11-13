@@ -6,7 +6,7 @@ extern "C" {
 
     void apply(uint64_t code, uint64_t action)  {
           if (action == N(helloworld)) {
-            eos::print("Hello World!\n");
+            eosio::print("Hello World!\n");
           }
     }
 }

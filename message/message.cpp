@@ -1,6 +1,6 @@
 #include <message/message.hpp>
 
-using namespace eos;
+using namespace eosio;
 
 namespace message {
   void output(const message::Input input) { 
@@ -14,7 +14,7 @@ namespace message {
 
     read_message(str, len2);
     prints(str);
-    eos::print("\n");
+    eosio::print("\n");
   }
 }
 

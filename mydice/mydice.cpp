@@ -1,6 +1,6 @@
 #include <mydice/mydice.hpp>
 
-using namespace eos;
+using namespace eosio;
 
 namespace mydice {
 
