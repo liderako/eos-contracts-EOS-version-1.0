@@ -1,34 +1,20 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   player.cpp                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: asvirido <asvirido@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/17 15:41:12 by asvirido          #+#    #+#             */
-/*   Updated: 2017/11/07 14:13:28 by asvirido         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <player/player.hpp>
-
-using namespace eos;
 
 namespace player{
 
-	void	sendMoney( AccountName name, int quantity) {
+	void	sendMoney( uint64_t accountName, int quantity ) {
 		Account 	account;
 
-		account = getAccount( name );
+		account = getAccount( accountName );
 		account.moneySub(quantity);
 		player::Store( account );
 	}
 
-	void	getMoney( AccountName name, int quantity) {
+	void	getMoney( uint64_t accountName, int quantity ) {
 		Account 	account;
 
-		account = getAccount( name );
-		account.moneyAdd(quantity);
+		account = getAccount( accountName );
+		account.moneyAdd( quantity );
 		player::Store( account );
 	}
 }

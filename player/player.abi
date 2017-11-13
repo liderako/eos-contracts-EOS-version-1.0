@@ -1,37 +1,37 @@
 {
   "types": [{
-      "newTypeName": "AccountName",
-      "type": "Name"
+      "new_type_name": "account_name",
+      "type": "name"
     }
   ],
   "structs": [{
   "name": "variable",
     "fields": {
-      "name": "String"
-      "count": "UInt64"
+      "name": "string"
+      "count": "uint64"
     }
   },{
   "name": "account",
     "fields": {
-        "name": "AccountName"
-        "win": "UInt64"
+        "name": "account_name"
+        "win": "uint64"
     }
   },{
   "name": "void"
   }
   ],
   "actions": [{
-    "action": "hello", "type": "void"
+    "action_name": "hello", "type": "void"
     },{
-    "action": "win", "type": "void"
+    "action_name": "win", "type": "void"
     },{
-    "action": "remove", "type": "void"
+    "action_name": "remove", "type": "void"
     }
   ],
   "tables": [{
-      "table": "account",
+      "table_name": "account",
       "type": "account",
-      "indextype": "i64",
+      "index_type": "i64",
     }
   ]
 }
