@@ -1,10 +1,10 @@
 {
   "types": [{
-      "newTypeName": "AccountName",
-      "type": "Name"
+      "new_type_name": "account_name",
+      "type": "name"
     },{
-      "newTypeName": "int",
-      "type": "UInt64"
+      "new_type_bame": "int",
+      "type": "uint64"
     }
   ],
   "structs": [ {
@@ -15,9 +15,9 @@
   }
   ],
   "actions": [{
-    "action": "output", "type": "input"
+    "action_name": "output", "type": "input"
     },{
-    "action": "dynamic", "type": "String"
+    "action_name": "dynamic", "type": "string"
     }
   ]
 }

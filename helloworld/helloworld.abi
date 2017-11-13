@@ -4,7 +4,7 @@
   }
   ],
   "actions": [{
-    "action": "helloworld", "type": "void"
+    "action_name": "helloworld", "type": "void"
   }
   ]
 }

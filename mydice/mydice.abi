@@ -1,14 +1,14 @@
 {
   "types": [{
-      "newTypeName": "AccountName",
-      "type": "Name"
+      "new_type_name": "account_name",
+      "type": "name"
     }
   ],
   "structs": [{
   "name": "players",
     "fields": {
-        "one": "AccountName"
-        "two": "AccountName"
+        "one": "account_name"
+        "two": "account_name"
     }
   },{
   "name": "void"
@@ -16,21 +16,21 @@
   {
   "name": "account",
     "fields": {
-        "name": "AccountName"
-        "win": "UInt64"
+        "name": "account_name"
+        "win": "uint64"
     }
   }
   ],
   "actions": [{
-    "action": "game", "type": "players"
+    "action_name": "game", "type": "players"
     },{
-    "action": "load", "type": "void"
+    "action_name": "load", "type": "void"
     }
   ]
   "tables": [{
-      "table": "account",
+      "table_name": "account",
       "type": "account",
-      "indextype": "i64"
+      "index_type": "i64"
     }
   ]
 }
