@@ -1,10 +1,10 @@
 {
-  "structs": [{
-    "name": "void"
-  }
-  ],
-  "actions": [{
-    "action_name": "helloworld", "type": "void"
-  }
-  ]
+	"structs":	[{
+		"name": "void"
+	}
+	],
+	"actions":	[{
+		"action_name": "helloworld", "type": "void"
+	}
+	]
 }

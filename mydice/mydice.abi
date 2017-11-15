@@ -1,36 +1,35 @@
 {
-  "types": [{
-      "new_type_name": "account_name",
-      "type": "name"
-    }
-  ],
-  "structs": [{
-  "name": "players",
-    "fields": {
-        "one": "account_name"
-        "two": "account_name"
-    }
-  },{
-  "name": "void"
-  },
-  {
-  "name": "account",
-    "fields": {
-        "name": "account_name"
-        "win": "uint64"
-    }
-  }
-  ],
-  "actions": [{
-    "action_name": "game", "type": "players"
-    },{
-    "action_name": "load", "type": "void"
-    }
-  ]
-  "tables": [{
-      "table_name": "account",
-      "type": "account",
-      "index_type": "i64"
-    }
-  ]
+	"types":	[{
+		"new_type_name":	"account_name",
+		"type":	"name"
+		}
+	],
+	"structs":	[{
+		"name":	"players",
+			"fields":	{
+				"one":	"account_name",
+				"two":	"account_name"
+			}
+		},{
+		"name":	"void"
+		},{
+		"name":	"account",
+			"fields":	{
+				"name":	"account_name",
+				"win":	"uint64"
+			}
+		}
+	],
+	"actions":	[{
+		"action_name":	"game",	"type":	"players"
+		},{
+		"action_name":	"load",	"type":	"void"
+		}
+	],
+	"tables":	[{
+		"table_name":	"account",
+		"type":	"account",
+		"index_type":	"i64"
+		}
+	]
 }

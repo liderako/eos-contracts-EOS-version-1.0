@@ -6,8 +6,8 @@
 namespace mydice {
 using namespace player;
 
-  struct Game {
-    uint64_t   accountNameOne;
-    uint64_t   accountNameTwo;
-  };
+	struct Game {
+		uint64_t	accountNameOne;
+		uint64_t	accountNameTwo;
+	};
 }

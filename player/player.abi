@@ -1,38 +1,37 @@
 {
-  "types": [{
-      "new_type_name": "account_name",
-      "type": "name"
-    }
-  ],
-  "structs": [{
-  "name": "variable",
-    "fields": {
-      "name": "string"
-      "count": "uint64"
-    }
-  },{
-  "name": "account",
-    "fields": {
-        "name": "account_name"
-        "win": "uint64"
-    }
-  },{
-  "name": "void"
-  }
-  ],
-  "actions": [{
-    "action_name": "hello", "type": "void"
-    },{
-    "action_name": "win", "type": "void"
-    },{
-    "action_name": "remove", "type": "void"
-    }
-  ],
-  "tables": [{
-      "table_name": "account",
-      "type": "account",
-      "index_type": "i64",
-    }
-  ]
+	"types": [{
+		"new_type_name": "account_name",
+		"type": "name"
+		}
+	],
+	"structs": [{
+		"name": "variable",
+			"fields": {
+				"name": "string",
+				"count": "uint64"
+			}
+		},{
+		"name": "account",
+			"fields": {
+				"name": "account_name",
+				"win": "uint64"
+			}
+		},{
+		"name": "void"
+		}
+	],
+	"actions": [{
+		"action_name": "hello", "type": "void"
+		},{
+		"action_name": "win", "type": "void"
+		},{
+		"action_name": "remove", "type": "void"
+		}
+	],
+	"tables": [{
+		"table_name": "account",
+		"type": "account",
+		"index_type": "i64",
+		}
+	]
 }
-

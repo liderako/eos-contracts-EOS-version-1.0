@@ -1,23 +1,23 @@
 {
-  "types": [{
-      "new_type_name": "account_name",
-      "type": "name"
-    },{
-      "new_type_bame": "int",
-      "type": "uint64"
-    }
-  ],
-  "structs": [ {
-  "name": "input",
-    "fields": {
-      "text": "int"
-    }
-  }
-  ],
-  "actions": [{
-    "action_name": "output", "type": "input"
-    },{
-    "action_name": "dynamic", "type": "string"
-    }
-  ]
+	"types":	[{
+		"new_type_name":	"account_name",
+		"type":	"name"
+		},{
+		"new_type_bame":	"int",
+		"type":	"uint64"
+		}
+	],
+	"structs":	[{
+		"name":	"input",
+			"fields":	{
+				"text":	"int"
+			}
+		}
+	],
+	"actions":	[{
+		"action_name":	"output",	"type":	"input"
+		},{
+		"action_name":	"dynamic",	"type":	"string"
+		}
+	]
 }

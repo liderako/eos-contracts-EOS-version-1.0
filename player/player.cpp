@@ -31,5 +31,5 @@ extern "C" {
 		else if ( action == N(win) ) {
 			player::getMoney( code, 20 );
 		}
-    }
+	}
 }

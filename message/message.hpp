@@ -4,7 +4,7 @@ namespace message {
 
 typedef uint64_t String;
 
-  struct Input {
-  	String text;
-  };
+	struct Input {
+		String text;
+	};
 }
