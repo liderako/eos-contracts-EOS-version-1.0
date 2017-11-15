@@ -13,24 +13,24 @@ namespace mydice {
 		return (result);
 	}
 
-	void	messageSend(AccountName name, uint64_t action) {
-		Message message = Message(name, action);
+	void	messageSend(uint64_t accountName, uint64_t action) {
+		Message message = Message(accountName, action);
 		message.send();
 	}
 
-	void  getMoney(AccountName one, AccountName two) {
+	void  getMoney(uint64_t accountNameOne, uint64_t accountNameTwo) {
 		Account mydice = player::getAccount( N(mydice) );
-		mydice::messageSend(one, N(sendmoney));
-		mydice::messageSend(two, N(sendmoney));
+		mydice::messageSend(accountNameOne, N(sendmoney));
+		mydice::messageSend(accountNameTwo, N(sendmoney));
 
 		mydice.moneyAdd(20);/* add balance in table mydice */
 		player::Store(mydice); /* update data in table */
 	}
 
-	void sendMoney(AccountName win, AccountName lose) {
+	void sendMoney(uint64_t accountNameWin, uint64_t accountNameLose) {
 		Account mydice = player::getAccount( N(mydice) );
-		mydice::messageSend(win, N(win));
-		mydice::messageSend(lose, N(lose));
+		mydice::messageSend(accountNameWin, N(win));
+		mydice::messageSend(accountNameLose, N(lose));
 		
 		mydice.moneySub(20);/* sub balance in table mydice */
 		player::Store(mydice); /* update data in table */
@@ -39,20 +39,20 @@ namespace mydice {
 	void  Gameplay(const mydice::Game& game) {
 
 		int 			whoWin;
-		AccountName 	win;
-		AccountName		lose;
+		uint64_t 		accountNameWin;
+		uint64_t		accountNameLose;
 
-		mydice::getMoney(game.one, game.two);
+		mydice::getMoney(game.accountNameOne, game.accountNameTwo);
 		whoWin = getWiner();
 		if (whoWin == 0) {
-			win = game.one;
-			lose = game.two;
+			accountNameWin = game.accountNameOne;
+			accountNameLose = game.accountNameTwo;
 		}
 		else {
-			win = game.two;
-			lose = game.one;
+			accountNameWin = game.accountNameTwo;
+			accountNameLose = game.accountNameOne;
 		}
-		mydice::sendMoney(win, lose);
+		mydice::sendMoney(accountNameWin, accountNameLose);
 	}
 }
 
